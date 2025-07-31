@@ -5,7 +5,17 @@ import gic.minesweeper.model.GameGrid;
 import gic.minesweeper.model.UserInput;
 
 public class MineSweeperService {
-    UserInputReader userInputReader = new UserInputReader();
+    private final UserInputReader userInputReader;
+
+    // Constructor for test class (inject UserInputReader)
+    public MineSweeperService(UserInputReader userInputReader) {
+        this.userInputReader = userInputReader;
+    }
+    // Default constructor for code
+    public MineSweeperService() {
+        this.userInputReader = new UserInputReader();
+    }
+
 
     public void gameInitiate() {
         System.out.println("Welcome to Minesweeper!\n");

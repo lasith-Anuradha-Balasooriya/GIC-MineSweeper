@@ -4,6 +4,10 @@ import gic.minesweeper.model.CellPosition;
 
 public class MineSweeperUtil {
 
+    private MineSweeperUtil() {
+        throw new IllegalStateException("Utility class");
+    }
+
     public static int inputValidate(String userInput){
         //validate user input as a non-empty int
         int value = 0;
@@ -25,7 +29,7 @@ public class MineSweeperUtil {
 
     public static CellPosition converter(String input, int size) {
         // calculate the cell position based on input
-        if (input.length() < 2) {
+        if (input == null || input.length() < 2) {
             return null;
         }
         char rowChar = input.charAt(0);

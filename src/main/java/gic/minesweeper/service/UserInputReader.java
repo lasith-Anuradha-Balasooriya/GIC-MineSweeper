@@ -8,7 +8,17 @@ import java.util.Scanner;
 
 public class UserInputReader {
 
-    private final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner;
+
+    // Default constructor for code
+    public UserInputReader() {
+        this.scanner = new Scanner(System.in);
+    }
+
+    // Constructor for test class (inject Scanner)
+    public UserInputReader(Scanner scanner) {
+        this.scanner = scanner;
+    }
 
     protected UserInput getInitialUserInput() {
 
