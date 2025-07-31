@@ -1,4 +1,5 @@
 package gic.minesweeper.model;
 
-public class CellPosition {
+public record CellPosition(int row, int col) {
+
 }
