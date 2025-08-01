@@ -60,7 +60,9 @@ Build and Run
  
 - Run the Game
 
-	java -cp target/minesweeper-game-1.0.jar gic.minesweeper.MineSweeperGameApplication
+    cd to relevant folder path
+
+    java -jar minesweeper-game-1.0.jar
  
 Running Tests
 -------------

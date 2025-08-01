@@ -1,3 +1,5 @@
+package gic.minesweeper;
+
 import gic.minesweeper.service.MineSweeperService;
 
 public class MineSweeperGameApplication {
